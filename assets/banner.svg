@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" width="880" height="240" role="img" aria-label="QuantForge — a CLI-first trading systems framework in Rust. Market data, backtests and live trading from the terminal. Rust, Binance Spot, SQLite, MIT licensed.">
+  <title>QuantForge</title>
+
+  <rect x="0.5" y="0.5" width="879" height="239" rx="12" fill="#0B0B23" stroke="#2E2660"/>
+
+  <g stroke="#15123C" stroke-width="1">
+    <path d="M520 196 H852"/>
+    <path d="M520 156 H852"/>
+    <path d="M520 116 H852"/>
+    <path d="M520 76 H852"/>
+  </g>
+
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="56" y="98" font-size="54" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Quant<tspan fill="#A78BFA">Forge</tspan></text>
+    <text x="58" y="134" font-size="17" fill="#C7C4E8">Market data, backtests, live trading — all from the terminal.</text>
+  </g>
+
+  <text xml:space="preserve" x="58" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#7C77A6" letter-spacing="0.4">Rust <tspan fill="#4A4570">·</tspan> Binance Spot <tspan fill="#4A4570">·</tspan> SQLite <tspan fill="#4A4570">·</tspan> MIT</text>
+
+  <g transform="translate(556 0)">
+    <g stroke="#6C3EF5" stroke-width="2">
+      <path d="M16 150 V186"/>
+      <path d="M60 120 V162"/>
+      <path d="M148 104 V146"/>
+      <path d="M236 82 V128"/>
+      <path d="M280 60 V104"/>
+    </g>
+    <g stroke="#2E2660" stroke-width="2">
+      <path d="M104 112 V158"/>
+      <path d="M192 96 V142"/>
+    </g>
+
+    <g fill="#6C3EF5">
+      <rect x="8" y="158" width="16" height="22" rx="2"/>
+      <rect x="52" y="128" width="16" height="26" rx="2"/>
+      <rect x="140" y="112" width="16" height="26" rx="2"/>
+      <rect x="228" y="90" width="16" height="30" rx="2"/>
+      <rect x="272" y="68" width="16" height="28" rx="2"/>
+    </g>
+    <g fill="#0B0B23" stroke="#4A4570" stroke-width="2">
+      <rect x="97" y="120" width="16" height="30" rx="2"/>
+      <rect x="185" y="104" width="16" height="30" rx="2"/>
+    </g>
+
+    <path d="M16 176 L60 150 L104 142 L148 130 L192 122 L236 106 L280 84" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <circle cx="280" cy="84" r="4" fill="#A78BFA"/>
+  </g>
+</svg>

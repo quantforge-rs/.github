@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 392" width="840" height="392" role="img" aria-label="Terminal showing quantforge --help output">
+  <title>quantforge --help</title>
+  <rect x="0.5" y="0.5" width="839" height="391" rx="12" fill="#0B0B23" stroke="#2E2660"/>
+  <path d="M0.5 40 V12.5 A12 12 0 0 1 12.5 0.5 H827.5 A12 12 0 0 1 839.5 12.5 V40 Z" fill="#15123C"/>
+  <path d="M0.5 40.5 H839.5" stroke="#2E2660" stroke-width="1"/>
+  <circle cx="26" cy="20.5" r="6" fill="#FF5F57"/>
+  <circle cx="46" cy="20.5" r="6" fill="#FEBC2E"/>
+  <circle cx="66" cy="20.5" r="6" fill="#28C840"/>
+  <text x="420" y="25" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" fill="#7C77A6">quantforge 0.2.0</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#C7C4E8">
+    <text xml:space="preserve" x="30" y="76"><tspan fill="#A78BFA">$</tspan> <tspan fill="#FFFFFF" font-weight="600">quantforge</tspan> <tspan fill="#7C77A6">--help</tspan></text>
+    <text xml:space="preserve" x="30" y="120">CLI-first market data ingestion, research, and controlled live trading framework.</text>
+    <text xml:space="preserve" x="30" y="164"><tspan fill="#FFFFFF" font-weight="600">Usage:</tspan> <tspan fill="#A78BFA">quantforge</tspan> [OPTIONS] &lt;COMMAND&gt;</text>
+    <text xml:space="preserve" x="30" y="208" fill="#FFFFFF" font-weight="600">Commands:</text>
+    <text xml:space="preserve" x="30" y="230">  <tspan fill="#A78BFA">data</tspan>      Historical and incremental data ingestion into SQLite</text>
+    <text xml:space="preserve" x="30" y="252">  <tspan fill="#A78BFA">backtest</tspan>  Deterministic backtest using locally stored candles</text>
+    <text xml:space="preserve" x="30" y="274">  <tspan fill="#A78BFA">trade</tspan>     Run or manually close the strategy bot</text>
+    <text xml:space="preserve" x="30" y="296">  <tspan fill="#A78BFA">monitor</tspan>   Observe Binance state and manage orders manually when needed</text>
+    <text xml:space="preserve" x="30" y="318">  <tspan fill="#A78BFA">help</tspan>      Print this message or the help of the given subcommand(s)</text>
+    <text xml:space="preserve" x="30" y="362"><tspan fill="#A78BFA">$</tspan> </text>
+  </g>
+  <rect x="46.8" y="349" width="8.4" height="16" fill="#A78BFA" opacity="0.85"/>
+</svg>
