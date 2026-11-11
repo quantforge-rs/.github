@@ -26,7 +26,7 @@ There is no UI. The CLI is the product.
 </div>
 
 - **Dry-run is the default.** Placing a real order takes an explicit `--mode live` and exchange credentials.
-- **Backtests are deterministic.** A strategy sees only closed bars and fills at the next bar's open, so the same data and settings give the same result.
+- **Backtests are deterministic.** The same stored candles and settings give the same result. An order fills at the next bar's open, and a position still open at the end is closed at the last bar's close.
 - **No floating point for money.** Prices and volumes are decimal, because `f64` quietly loses cents.
 - **No `unsafe`, no `unwrap()`.** The crate forbids unsafe code, and CI runs on Linux, macOS and Windows.
 
@@ -49,6 +49,8 @@ There is no UI. The CLI is the product.
 - A built-in SMA crossover, plus a Rust SDK for your own strategies
 - Closed-bar polling
 - Dry-run by default, live only with an explicit flag and credentials
+
+One limit to know in 0.2.0: when a sync reaches the present, `data sync` stores the candle that is still forming and keeps that snapshot, so a backtest over that data reads bars that had not closed. A sync whose `--end` had already passed, like the quickstart's, stores only closed candles. The fix is on `main`.
 
 **In development: v0.3.** The work lands on `main` in the open. It is not released, there is no date, and nothing on `main` counts as a release.
 
