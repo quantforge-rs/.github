@@ -50,7 +50,7 @@ There is no UI. The CLI is the product.
 - Closed-bar polling
 - Dry-run by default, live only with an explicit flag and credentials
 
-One limit to know in 0.2.0: when a sync reaches the present, `data sync` stores the candle that is still forming and keeps that snapshot, so a backtest over that data reads bars that had not closed. A sync of a past range stores only closed candles and replaces any snapshots in that range. The quickstart syncs a past month and backtests exactly that month. The fix is on `main`.
+One limit to know in 0.2.0: when a sync reaches the present, `data sync` stores the candle that is still forming and keeps that snapshot, so a backtest over that data reads bars that had not closed. A sync stores only closed candles, and replaces any snapshots in its range, once the candle containing its `--end` has closed. The quickstart syncs a past month and backtests exactly that month. The fix is on `main`.
 
 **In development: v0.3.** The work lands on `main` in the open. It is not released, there is no date, and nothing on `main` counts as a release.
 
@@ -77,7 +77,7 @@ quantforge data sync --symbol BTCUSDT --interval 1m --start 2026-08-01T00:00:00Z
 
 # replay an SMA crossover over that month — same input, same numbers, every time
 quantforge backtest --symbol BTCUSDT --interval 1m --fast 20 --slow 50 --cash 10000 \
-  --start 2026-08-01T00:00:00Z --end 2026-09-01T00:00:00Z
+  --start 2026-08-01T00:00:00Z --end 2026-08-31T23:59:00Z
 
 # run the same strategy against live candles, without sending an order
 quantforge trade run --symbol BTCUSDT --interval 1m --fast 20 --slow 50 --mode dry-run
